@@ -1,8 +1,6 @@
-
-import config
 import telebot
-
-bot = telebot.TeleBot('1855568832:AAFxk0I2fT9EG4US1FfB_eeJ4odUs8udD-0')
+TOKEN = '1855568832:AAFxk0I2fT9EG4US1FfB_eeJ4odUs8udD-0'
+bot = telebot.TeleBot(TOKEN)
 
 @bot.message_handler(content_types=["text"])
 def repeat_all_messages(message): # Название функции не играет никакой роли
